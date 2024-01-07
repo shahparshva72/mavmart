@@ -1,0 +1,351 @@
+
+/* 
+Shivamadhu, Gagan Deep 1001791865 
+Suryavamshi, Harsha 1001933423 
+Shah, Parshva 1001838879
+*/
+@import "navigation.css";
+@import "register.css";
+@import "login.css";
+@import "banner.css";
+@import "footer.css";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main{
+  flex: 1;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.hide{
+  display: none;
+}
+.fa-brands{
+  font-size: 1.2rem;
+  padding: 0.1em;
+}
+@media only screen and (max-width: 767px) {
+  .hide{
+    display: none !important;
+  }
+  
+  main .flashcards {
+    
+    flex-wrap: wrap;
+    justify-content: left;
+    align-self: center;
+    flex-direction: column;
+    padding: 20px;
+    /* margin: 30px; */
+    /* flex-flow: row; */
+}
+  main .flashcards .card {
+   
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px;
+    background: #dacaa9;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .flashcards {
+    
+    
+    justify-content: left;
+    align-self: center;
+    padding: 20px;
+    margin: 30px;
+    flex-flow: row;
+  }
+  main .flashcards .card {
+    
+    
+    justify-content: space-between;
+    align-self: center;
+    padding: 20px;
+    margin: 10px;
+    background: #dacaa9;
+  }
+}
+
+
+/* 
+Artwani, Harsh - 1001953350
+Jain, Himani - 1001990776
+Kumar, Niraj - 1001861598
+*/
+
+#registration-page {
+    height:85vh;
+    background:white; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow:scroll;
+}
+#registration-page h3 {
+    font-size: 25px;
+    font-weight: normal;
+    text-transform: uppercase;
+    /* letter-spacing: 4px; */
+    padding-left: 0.5em;
+}
+.signup-form  {
+    flex: 1;
+    max-width: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.signup-form .form-header {
+    padding:15px 0;
+    border-bottom:1px solid #cccccc;
+}
+.signup-form .form-body {
+    background:white;
+    padding:5px 10px;
+}
+.signup-form .row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.signup-form .input-group {
+    flex:1;  
+    display:flex;
+    margin: 10px 5px;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.signup-form label {
+    color:black;
+    font-size: 17px;
+    font-weight: 500;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+        font-size: 1em;
+        height: 34px;
+        padding-left: 0.1em;
+        padding-right: 0.1em;
+        background: #ebeced;
+        height: 2.5em;
+}
+.signup-form .form-footer {
+    display:flex;
+    justify-content: flex-end;
+    padding-right: 1em;
+}
+.signup-form .btn {
+    padding:10px 20px;
+    background-color: black;
+    font-size: 1em;
+    color:white;
+    cursor:pointer;
+}
+@media only screen and (max-width: 768px) {
+    .signup-form .row{
+      flex-direction:column; 
+    }
+    .signup-form .input-group {
+    flex:1;  
+    display:flex;
+    margin: 10px 5px;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+    .signup-form .btn {
+        flex:1;
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+#login-page {
+    display:flex;
+    justify-content: center;
+	height: 100%;
+    padding-top: 10%;
+}
+#login-page h1 {
+    padding-left: 0.5em;
+}
+
+.login-form  {
+    flex: 1;
+	max-width: 400px;
+}
+.login-form .form-header {
+    padding:15px 0;
+    border-bottom:1px solid #cccccc;
+}
+.login-form .form-header h1 {
+    font-size: 28px;
+    text-align:center;
+    color:#666;
+}
+.login-form .form-body {
+    background:white;
+    padding:5px 10px;
+}
+.login-form .row {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+.login-form .column {
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.login-form .input-group {
+    flex:1;  
+    display:flex;
+    margin: 10px 5px;
+    flex-direction:column;
+}
+.login-form .input-group a {
+    color: black;
+    float: right;
+    text-decoration: underline;
+}
+.login-form label {
+    color:black;
+    font-size: 17px;
+    font-weight: 500;
+}
+.login-form input[type="text"]
+input[type="email"]
+input[type="password"] {
+    font-size: 18px;
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #d6d6d6;
+    background: #ebeced;
+    height: 2.5em;
+  }
+.login-form .form-footer {
+    display:flex;
+    justify-content: center;
+}
+.login-form .btn {
+    padding: 10px 40px;
+    background-color: #000;
+    font-size: 17px;
+    /* border: none; */
+    /* border-radius: 5px; */
+    color: #fff;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    .login-form .row{
+      flex-direction: column; 
+    }
+
+    .login-form .btn {
+        flex:1;
+    }
+}
+.banner h1 { font-size: 60px; }
+.banner h3 {
+  font-size: 32px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.banner h6 { font-size: 22px; }
+
+.banner h1, .banner h3, .banner h6 {
+  margin: 0;
+  text-shadow: 2px 2px 6px #000;
+  text-align: center;
+}
+
+.banner {
+  color: white;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/banner-flowers.jpg') top left/cover no-repeat;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+    background: black;
+    padding: 1em 1em;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+.footer-links-left{
+  list-style-type: none;
+}
+.footer-links-right{
+  display: flex;
+  list-style-type: none;
+}
+@media all and (min-width: 960px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: none;
+        text-align: center;
+      }
+      .footer li a {
+        display: block;
+        padding: 15px 5px;
+      }
+}
+
+.nav-right .user-login{
+    display: flex;
+    list-style-type: none;
+  }
+.nav-right ul.user-login li{
+    padding: 0.2em;
+}
+.nav-left ul{
+    display: flex;
+    list-style-type: none;
+  }
+@media only screen and (max-width: 767px) {
+    .item {
+      order: 1;
+      position: relative;
+      display: block;
+      width: auto;
+    }
+    nav li:nth-child(4) {
+      margin-left: auto;
+    }
+}
+
+nav {
+    background: black;
+    padding: 0.5em 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+.bg-white {
+    color: #cccccc;
+}

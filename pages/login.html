@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://kit.fontawesome.com/1b50d73843.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+<body>
+    <!-- Navigation Bar-->
+    <nav>
+        <div class="nav-left">
+            <ul >
+                <li class="item logo"><a href="#">MavMart</a></li>
+                <li class="item"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li class="item"><a href="home.html">Home</a></li>
+            <li class="item"><a href="aboutus.html">About Us</a></li>
+            <li class="item"><a href="services.html">Services</a></li>
+            <li class="item"><a href="contactus.html">Contact Us</a></li>
+                <li class="item"><input type="text" placeholder="Search"></li>
+                <li class="item"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li class="item">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="fa-solid fa-user"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="userprofile.html">Profile</a>
+                          <a href="login.html">Sign In</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Login Form -->
+    <main>
+        <section id="login-page">
+            <form class="login-form" action="#" method="post">
+                <div class="form-body">
+                    <div class="column">
+                        <div class="styled-login-form">
+                            <div class="input-group">
+                                <input type="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="password" name="password" placeholder="Password" required>
+                            </div>
+                            <div class="row">
+                                <div class="input-group">
+                                    <a href="signup.html" class="styled-btn-1">Register</a>
+                                </div>
+                                <div class="input-group">
+                                    <button  onclick="login(event)"  class="styled-btn-1">Sign In</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-footer">
+                            <div class="input-group">
+                                <a href="#" class="button-primary">Forgot Password</a>
+                            </div>
+                            
+                            <div class="input-group">
+                                <a href="home.html" class="button-primary">Sign In into a logged in page(To be removed after this phase)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <ul class="footer-links-left">
+            <li class=""><a href="contactus.html">Contact-Us</a></li>
+        </ul>
+		<ul class="footer-links-right">
+			<li class="footer-links"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li class="footer-links"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li class="footer-links"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="footer-links"><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+            <li class="footer-links"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+		</ul>
+    </footer>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

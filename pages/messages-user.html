@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet"  type='text/css'>
+    <script src="https://kit.fontawesome.com/3be9661d4d.js" crossorigin="anonymous"></script>
+    <title>mavmart</title>
+</head>
+<body>
+<!-- Navigation -->
+<nav>
+    <div class="nav-left">
+        <ul >
+            <li class="item logo"><a href="#">MavMart</a></li>
+            <li class="item"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+    </div>
+    <div class="nav-right">
+        <ul>
+            <li class="item"><a href="home.html">Home</a></li>
+            <li class="item"><a href="aboutus.html">About Us</a></li>
+            <li class="item"><a href="services.html">Services</a></li>
+            <li class="item"><a href="contactus.html">Contact Us</a></li>
+            <li class="item"><input type="text" placeholder="Search"></li>
+            <li class="item"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li class="item"><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+
+        </ul>
+    </div>
+</nav>
+    <main>
+        <div class="container">
+            <h2 class="font-4em color-brown">Your Messages </h2>
+            <form action="/action_page.php">
+              <label for="subject">**SELECTED USERNAME HERE**</label><br><br>
+              <label for="subject">To chat with users you have previously messaged, select user here :</label>
+              <input list="users-history" name="select-user" id="select-user" placeholder="Select user to chat">
+              <datalist id="users-history">
+                <option value="User1">
+                <option value="User2">
+                <option value="User3">
+                <option value="User4">
+              </datalist><br>
+              <label for="subject">To chat with other users enter username here :</label>
+              <input type="text" id="user-find" name="user-find" placeholder="Enter username"><br>
+              <input type="submit" value="Find"><br>
+              <!--need this in the same line as the prev attr and also cahnge the size of it-->
+              <!--i dont know about the 'for' value here but we need to show the user name there-->
+              <div class ="container-messages">
+                    <label for="subject">message 1</label><br><br>
+                    <label for="subject">message 2</label><br><br>
+                    <label for="subject">message 3</label><br><br>
+                    <label for="subject">message 4</label><br><br>
+                    <label for="subject">message 5</label><br><br>
+                    <label for="subject">message 6</label><br><br>
+                    <label for="subject">message 7</label>
+                    <!--i dont know about the 'for' value here but we need to show the messages one by one and
+                    change alignment according to the sender and reciever and also make sure timestamp is there-->
+              </div>
+              <input type="text" id="message" name="message" placeholder="Type your message here...">
+              <!--need to do handling for name and id message, users-history, select-users, user-find -->
+
+              <input type="submit" value="Send">
+            </form>
+          </div>
+    </main>
+    <footer>
+        <ul class="footer-links-left">
+            <li class=""><a href="contactus.html">Contact-Us</a></li>
+        </ul>
+		<ul class="footer-links-right">
+			<li class="footer-links"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li class="footer-links"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li class="footer-links"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="footer-links"><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+            <li class="footer-links"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+		</ul>
+    </footer>
+</body>
+</html>
